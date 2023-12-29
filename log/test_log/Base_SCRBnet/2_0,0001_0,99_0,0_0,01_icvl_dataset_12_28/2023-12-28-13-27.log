@@ -1,0 +1,24 @@
+[2023-12-28 13:27:42,134][line: 30] ==> creating log_channel_max_nas/test_log\Base_SCRBnet\2_0,0001_0,99_0,0_0,01_icvl_dataset_12_28\2023-12-28-13-27.log
+[2023-12-28 13:27:42,134][line: 57] ==> {'data': {'data_set': 'icvl_dataset', 'train_dir': 'data/icvl_dataset/train_dataset', 'valid_dir': 'data/icvl_dataset/valid_dataset', 'source_dir': 'data/source_dataset/NAS_source', 'norm': 'channel_max', 'fixed': 'None'}, 'train': {'model': 'Res2Unet_32w6s_nointerp', 'max_epochs': 5000, 'batch_size': 2, 'learning_rate': 0.0001, 'device': 'cuda:0', 'optimizer': 'Adam', 'pre_train': 'None', 'loss_function': {'losses': ['L1Loss', 'MSELoss', 'MARELoss'], 'weights': [0.99, 0.0, 0.01]}, 'sigmoid_scale': 1.001, 'is_interp': False, 'is_two_x': False}, 'evaluate': {'evaluation_metrics': ['PSNR', 'SAM'], 'early_stopping': {'patience': 50, 'monitor': ['PSNR', 'SAM']}, 'batch_size': 2}, 'test': {'model': 'Base_SCRBnet', 'data_set': 'icvl_dataset', 'test_dir': 'data/icvl_dataset/valid_dataset', 'recovered_dir': 'recovered_icvl', 'device': 'cuda:0', 'pre_train': 'pth/base_scrb/best-epoch-2021-psnr-30.88285-sam-0.06006-10-26.pth', 'norm': 'channel_max', 'fixed': 'None', 'sigmoid_scale': 1.001, 'log': 'log_channel_max_nas/test_log'}, 'log': {'log_dir': 'log_channel_max_nas/log', 'ckp_dir': 'log_channel_max_nas/checkpoint', 'save_frequency': 10}, 'dataset': 'MosaicDataset_enhance', 'random_seed': 20231226}
+[2023-12-28 13:27:42,134][line: 58] ==> test_dataset: 20
+[2023-12-28 13:27:46,597][line: 104] ==> hdr_file: resize_8ch_D_2023_01_12_15-49-59.hdr, psnr: 30.2132, sam: 0.05125, time: 2.9526636600494385
+[2023-12-28 13:27:47,117][line: 104] ==> hdr_file: resize_8ch_D_2023_01_12_17-00-45.hdr, psnr: 30.27192, sam: 0.0777, time: 0.30518293380737305
+[2023-12-28 13:27:47,627][line: 104] ==> hdr_file: resize_8ch_D_2023_01_12_17-07-48.hdr, psnr: 27.86478, sam: 0.11205, time: 0.30479979515075684
+[2023-12-28 13:27:48,123][line: 104] ==> hdr_file: resize_8ch_D_2023_01_12_17-11-58.hdr, psnr: 29.48063, sam: 0.08715, time: 0.3041861057281494
+[2023-12-28 13:27:48,628][line: 104] ==> hdr_file: resize_8ch_D_2023_01_12_17-18-38.hdr, psnr: 29.44172, sam: 0.08685, time: 0.3061814308166504
+[2023-12-28 13:27:49,120][line: 104] ==> hdr_file: resize_8ch_D_2023_01_12_17-23-34.hdr, psnr: 28.41116, sam: 0.10312, time: 0.3041863441467285
+[2023-12-28 13:27:49,623][line: 104] ==> hdr_file: resize_8ch_D_2023_01_12_17-49-59.hdr, psnr: 30.2132, sam: 0.05125, time: 0.3061807155609131
+[2023-12-28 13:27:50,109][line: 104] ==> hdr_file: resize_8ch_D_2023_01_13_09-52-11.hdr, psnr: 31.12477, sam: 0.07538, time: 0.30515146255493164
+[2023-12-28 13:27:50,592][line: 104] ==> hdr_file: resize_8ch_D_2023_01_13_09-53-08.hdr, psnr: 33.25307, sam: 0.04221, time: 0.2842419147491455
+[2023-12-28 13:27:51,075][line: 104] ==> hdr_file: resize_8ch_D_2023_01_13_09-55-32.hdr, psnr: 31.13292, sam: 0.06812, time: 0.28523731231689453
+[2023-12-28 13:27:51,724][line: 104] ==> hdr_file: rsh2_0406-1505.hdr, psnr: 32.71424, sam: 0.03055, time: 0.4368312358856201
+[2023-12-28 13:27:52,397][line: 104] ==> hdr_file: sami_0331-1019.hdr, psnr: 31.81911, sam: 0.04068, time: 0.4587709903717041
+[2023-12-28 13:27:53,065][line: 104] ==> hdr_file: sat_0406-1107.hdr, psnr: 38.40442, sam: 0.04585, time: 0.4468038082122803
+[2023-12-28 13:27:53,730][line: 104] ==> hdr_file: sat_0406-1129.hdr, psnr: 32.96084, sam: 0.02611, time: 0.4547843933105469
+[2023-12-28 13:27:54,205][line: 104] ==> hdr_file: sat_0406-1130.hdr, psnr: 33.59005, sam: 0.0316, time: 0.28523778915405273
+[2023-12-28 13:27:54,910][line: 104] ==> hdr_file: sat_0406-1157-1.hdr, psnr: 33.41791, sam: 0.03108, time: 0.4837050437927246
+[2023-12-28 13:27:55,576][line: 104] ==> hdr_file: selfie_0822-0906.hdr, psnr: 31.31599, sam: 0.0411, time: 0.4428133964538574
+[2023-12-28 13:27:56,065][line: 104] ==> hdr_file: strt_0331-1027.hdr, psnr: 32.53286, sam: 0.03598, time: 0.2842404842376709
+[2023-12-28 13:27:56,758][line: 104] ==> hdr_file: tree_0822-0853.hdr, psnr: 31.42937, sam: 0.04553, time: 0.4697413444519043
+[2023-12-28 13:27:57,424][line: 104] ==> hdr_file: ulm_0328-1118.hdr, psnr: 32.33751, sam: 0.03512, time: 0.4384324550628662
+[2023-12-28 13:27:57,510][line: 134] ==> avg_psnr: 31.59648, avg_sam: 0.05593, avg_time: 0.49297
