@@ -1,0 +1,13 @@
+ENVI
+description = { Wayho Tech }
+samples = 636
+lines = 480
+bands = 8
+header offset = 0
+data type = 12
+interleave = bsq
+band names = {11,31,51,65,71,81,91,111}
+wavelength = {450,550,650,720,750,800,850,950}
+exposure = {1.0,0.34166,0.139346,0.16009,0.16149,0.229204,0.259396,0.342578}
+gain = {100,100,100,100,100,100,100,100}
+byte order = 0
